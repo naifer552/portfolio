@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@200&family=PT+Sans+Narrow&display=swap');
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+*/
+
+:root {
+
+    --naranja: #FF5B18;
+    --morado: #4E1B6A;
+
+  }
+
+ul{
+
+    /*Eliminar las viñetas a las listas*/
+    list-style: none;
+
+}
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95vh;
+
+}
+
+.container-background{
+
+    position: absolute;    
+    height: 90vh;
+    width: 62vh;
+    background: linear-gradient( 150deg, var(--naranja) 50%, var(--morado) 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 4vh;
+
+}
+
+.container-background img{
+
+    width: 35vh;
+    transform: rotate(-0.75deg);
+    text-align: center;
+    padding-bottom: 3.5vh;
+
+}
+
+.container{
+
+    height: 100vh;
+    width: 60vh;
+    z-index: 2;
+
+}
+
+.titleCont{
+
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    align-items: center;
+    margin-top: 2vh;
+    padding: 1vh;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2vh;
+
+}
+
+.text1{
+
+    text-align: right;
+
+}
+
+.titleCont img{
+
+    width: 7vh;
+
+}
+
+.textImg{
+
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+
+}
+
+.miniCont1{
+    
+    /*background-color: rgba(137, 43, 226, 0.178);*/
+    display: grid;
+    grid-template-columns: 5fr 2fr 5fr;
+    height: 35vh;
+    font-size: 2vh;
+
+    /*Quiero que el contenido este en los extremos*/
+
+}
+
+.miniCont1 li{
+    color: white;
+}
+
+.subMiniCont1{
+    
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+
+}
+
+.titleBlock1{
+    
+    display: flex;
+    align-items: center;
+    color: var(--morado);
+}
+.firstSec img{
+
+    width: 4vh;
+
+}
+
+
+.middleTitle{
+    
+
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+
+.middleTitle p{
+
+    padding: 0;
+    margin: 0;
+    font-size: 1vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logoList{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.textList{
+
+    padding: 0  .5vh;
+
+}
+
+.textList p{
+
+    font-size: 1.3vh;
+    padding: 0.5vh;
+
+}
+
+.textList b{
+
+    font-size: 2vh;
+}
+
+.secondSec{
+
+    padding-left: 3vh;
+}
+
+.secondCont img{
+
+    width: 2.5vh;
+
+}
+
+
+.thirdCont img{
+    width: 2vh;
+}
+
+.contentSecondSec li{
+    
+    display: flex;
+    align-items: center;
+    font-size: 1.8vh;
+
+}
+
+
+/*Bloque 2*/
+.miniCont2{
+
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    padding: 1vh;
+    height: 13vh;
+
+}
+
+.orange{
+
+    color: var(--naranja);
+
+}
+
+.fourCont{
+
+    font-size: 1vh;
+    padding-top: 0.5vh;
+
+}
+
+.fourCont div{
+
+    padding-top: 0.5vh;
+
+}
+
+.sec1 p{
+
+    padding-top: 0.4vh;
+
+}
+
+.sec2 p{
+
+    padding-top: 0.4vh;
+
+}
+
+/* Bloque 3*/
+
+.miniCont3{
+
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    padding: 1vh;
+    height: 8vh;
+
+}
+
+.logosCont1 ul, .logosCont2 ul{
+    
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fiveCont img{
+    height: 4vh;
+}
+
+.logosCont1 li, .logosCont2 li{
+
+    padding: 0.5vh;
+
+}
+
+.logosCont3 ul{
+
+    display: flex;
+
+}
+
+.sixCont{
+
+    color: white;
+
+}
+
+/*
+.fourTitle p{
+
+    font-family: 'Epilogue', sans-serif;
+    color: var(--naranja);
+
+}
+*/
+
+@media (max-width: 400px){
+
+    body{
+        width: 400px;
+    }
+
+}
+
+.titles, .fourTitle p{
+
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: var(--naranja);
+    font-size: 2.8vh;
+
+}
+.fiveSec{
+    padding-top: 4vh;
+}
+
+.sixCont{
+    font-size: 2vh;
+}
+
+
+.sevenCont img{
+    width: 3vh;
+}
+
+.logosCont3 img{
+
+    width: 12vh;
+
+}
+
+.fiveCont ul{
+    justify-content: space-evenly;
+}
+
+
+
+
+
